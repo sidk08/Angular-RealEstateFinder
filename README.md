@@ -22,11 +22,11 @@ Angular
 ##### Homepage :
 ![screenshot-hm](https://github.com/sidk08/Angular-RealEstateFinder/blob/master/homepage.JPG "Homepage")
 
-##### Search Page :
-![screenshot-srch](https://github.com/sidk08/Angular-RealEstateFinder/blob/master/search.JPG "Search")
-
 ##### Add properties page :
 ![screenshot-add](https://github.com/sidk08/Angular-RealEstateFinder/blob/master/add.JPG "Add")
+
+##### Search Page :
+![screenshot-srch](https://github.com/sidk08/Angular-RealEstateFinder/blob/master/searchpage.JPG "Search")
 
 
 Installation process:
