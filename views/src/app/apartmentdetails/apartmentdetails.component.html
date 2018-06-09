@@ -1,0 +1,120 @@
+<div class="w3-main w3-white" style="margin-left:100px ; margin-right:100px">
+
+  <!-- loading apartments images -->
+  <div class="w3-hide-large" style="margin-top:80px"></div>
+<div class="w3-container" id="apartment">
+  <div id="carousel-example" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example" data-slide-to="1"></li>
+        <li data-target="#carousel-example" data-slide-to="2"></li>
+      </ol>
+  
+      <div class="carousel-inner" *ngIf="apartment">
+        <div class="item active imagewidth">
+          <a href="#">
+            <img src="{{apartment.imgsrc1}}" />
+          </a>
+          
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="{{apartment.imgsrc2}}"  />
+          </a>
+          
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="{{apartment.imgsrc3}}"  />
+          </a>
+         
+            
+        </div>
+        <div class="item">
+            <a href="#">
+              <img src="{{apartment.imgsrc4}}"  />
+            </a>
+           
+              
+          </div>
+      </div>
+  
+      <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+
+</div>
+
+
+<div class="w3-container">
+    <h4><strong>Address</strong></h4>
+    <div class="w3-row w3-large">
+      <div class="w3-col s6" *ngIf="apartment">
+        <p> ADDRESS: {{apartment.address}}</p>
+        
+       
+      </div>
+      <div class="w3-col s6" *ngIf="apartment">
+          <p>ZIPCODE: {{apartment.zip}}</p>
+        </div>
+     </div>
+    <hr>
+  <h4><strong>Details</strong></h4>
+  <div class="w3-row w3-large">
+    <div class="w3-col s6" *ngIf="apartment">
+      <p><i class="fa fa-fw fa-male"></i> House Type: {{apartment.type}}</p>
+      <p><i class="fa fa-fw fa-bath"></i> Bathrooms: {{apartment.bath}}</p>
+      <p><i class="fa fa-fw fa-bed"></i> Bedrooms: {{apartment.bed}}</p>
+    </div>
+    <div class="w3-col s6" *ngIf="apartment">
+      <p><i class="glyphicon glyphicon-usd"></i> PRICE: {{apartment.price}}</p>
+      <p><i class="glyphicon glyphicon-th-large"></i> FLOOR SIZE: {{apartment.sqfeet +' sq.feet'}} </p>
+      <p><i class="glyphicon glyphicon-home"></i> PROPERTY FOR: {{apartment.category}}</p>
+    </div>
+  </div>
+  <hr>
+  
+  <h4><strong>Amenities</strong></h4>
+  <div class="w3-row w3-large">
+    <div class="w3-col s6">
+      <p><i class="fa fa-fw fa-shower"></i> Shower</p>
+      <p><i class="fa fa-fw fa-wifi"></i> WiFi</p>
+      <p><i class="fa fa-fw fa-tv"></i> TV</p>
+    </div>
+    <div class="w3-col s6">
+      <p><i class="fa fa-fw fa-cutlery"></i> Kitchen</p>
+      <p><i class="fa fa-fw fa-thermometer"></i> Heating</p>
+      <p><i class="fa fa-fw fa-wheelchair"></i> Accessible</p>
+    </div>
+  </div>
+  <hr>
+  
+  <h4><strong>Extra Info</strong></h4>
+  <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
+  <hr>
+  
+
+<div class="w3-container" id="contact">
+  <div class="center">
+  <h2>Contact Agent</h2>
+  
+  <form action="/action_page.php" target="_blank">
+
+    <p class=" inner-addon left-addon"> <i class="glyphicon glyphicon-user"></i><input class="contact w3-border" type="text" placeholder="Name" required name="Name"></p>
+    <p class=" inner-addon left-addon"><i class="glyphicon glyphicon-envelope"></i><input class="contact w3-border" type="text" placeholder="Email" required name="Email"></p>
+    <p class=" inner-addon left-addon"><i class=" glyphicon glyphicon-comment "></i><input class="contact w3-border" type="textarea" placeholder="Message" required name="Message"></p>
+  <button type="submit" class="w3-button w3-green w3-third">Send a Message</button>
+  <input type="button" value="Back" (click)="goBack()">
+  </form>
+</div>
+</div>
+
+
+
+<!-- End page content -->
+</div>

@@ -1,0 +1,109 @@
+div{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    margin: 25px;
+ }
+ 
+ .propertyList{
+ 
+    background-color: silver;
+    
+ }
+ 
+ .content {
+    background-color: white;
+    padding: 10px;
+    width: 20%;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+ }
+ 
+ .content > img{
+    width: 100%;
+ }
+ 
+ .new_prop{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: dotted;
+ }
+ 
+ #imgcontainer{
+    /* background-color: whitesmoke; */
+    width: 30%;
+    margin: 0 auto;
+    height: 180px;
+    padding: 50px;
+ }
+ 
+ .new_prop > img{
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+ 
+ }
+ 
+ .propDetail{
+    /* height: auto; */
+    min-height: 60%;
+    background-color:whitesmoke;
+ }
+ 
+ #edit{
+    width: 45px;
+    display: inline-block;
+    opacity: 0.3;
+ }
+ 
+ #edit:hover{
+    opacity: 1;
+ }
+ p{
+    display: inline-block;
+    width: 70%;
+ }
+ /* The Modal (background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    padding: 100px; /* Location of the box */
+     /* padding-right: 200px; */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+ 
+ /* Modal Content */
+ .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 50%;
+ }
+ 
+ /* The Close Button */
+ .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+ }
+ 
+ .close:hover,
+ .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+ }

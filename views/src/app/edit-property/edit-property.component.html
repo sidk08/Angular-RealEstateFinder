@@ -1,0 +1,65 @@
+<div*ngIf="apartment">
+    <h2>Edit details</h2>
+    <br>
+    <h4>Edit images</h4>
+    <div id="defaultImg">  
+      <img id="detailimg" src="{{apartment.imgsrc}}">
+    </div>
+    <!-- <p contenteditable="true">Address line 1</p> -->
+    <Label for="addr">
+    <input type="text" name="address" value="{{apartment.address}}" id="addr"><br>
+   </Label><br>
+   <label for="zip">
+    <input type="text" name="zipcode" value="{{apartment.zip}}">
+   </label>
+   <div id="propinfo">
+    <div id="hometype" class="sbs">
+      <h3>Home Type</h3>
+        <label for="house">
+            <input type="radio" id="house" name="hometype" checked="checked" value="house"> House
+          </label>
+          <label for="aprt">
+              <input type="radio" id="aprt" name="hometype" value="aprt"> Apartment
+            </label>
+            <label for="townhome">
+                <input type="radio" id="townhome" name="hometype" value="townhome"> Town Home
+              </label>
+              <label for="condos">
+                  <input type="radio" id="condos" name="hometype" value="condos"> Condos
+                </label>
+    </div><!--
+    --><div id="bedroom" class="sbs">
+        <h3>Bedroom</h3>
+        <label for="1bhk">
+            <input type="radio" id="1bhk" name="bedroom" checked="checked"> 1BHK
+          </label> &nbsp;
+          <label for="2bhk">
+            <input type="radio" id="2bhk" name="bedroom"> 2BHK
+          </label> &nbsp;
+          <label for="3bhk">
+              <input type="radio" id="3bhk" name="bedroom"> 3BHK
+            </label> &nbsp;
+          <label for="4bhk">
+            <input type="radio" id="4bhk" name="bedroom"> 4BHK
+          </label> &nbsp;
+          <label for="5bhk">
+              <input type="radio" id="5bhk" name="bedroom"> 5BHK &amp; Above
+            </label> &nbsp;  
+    </div>
+    <br>
+    <div class="sbs">
+      <h3>Put up property for </h3>
+      <label for="buy">
+          <input type="radio" id="buy" name="proptype" checked="checked"> Buying
+        </label> &nbsp;
+        <label for="rent">
+            <input type="radio" id="rent" name="proptype"> Rent
+          </label> &nbsp;
+    </div><!--
+   --><div class="sbs">
+    <label for="price">
+    <h4>Price: $</h4><input type="number" id="price" name="price"  min="1">
+    </label>
+    </div>
+   </div>
+   <!-- </div> -->

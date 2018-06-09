@@ -1,0 +1,100 @@
+
+
+<div class=" header-image" >  
+  
+ 
+  <div class="w3-content section"  style="max-width:80%"  >
+  
+      <div class="w3-content" >
+  
+          
+          <div class="w3-row-padding">
+  
+              <div class=" w3-col m3 divpadding ">
+                  <label> BEDS</label><br>  
+                  <select id="selectwidth" [(ngModel)]="selectedEntry_beds" (ngModelChange)='onSelectionChange_bed($event)'>
+                    <option  *ngFor="let bed of bedlist" [value]="bed.value">
+                      {{bed.value}}
+                    </option>
+                  </select>
+                </div>
+            <div class="w3-col m3 divpadding">
+              <label> HOME TYPE</label> <br> 
+              <select id="selectwidth" [(ngModel)]="selectedEntry_hometype" (ngModelChange)='onSelectionChange_hometype($event)'>
+                  <option *ngFor="let home of hometype" [value]="home.value">
+                    {{home.value}}
+                  </option>
+                </select>
+            </div>
+            <div class="w3-col m3 divpadding">
+              <label>PRICE MINIMUM</label><br>
+                  <select id="selectwidth" [(ngModel)]="selectedEntry_minprice" (ngModelChange)='onSelectionChange_pricemin($event)'>
+                    <option *ngFor="let min of price_min" [value]="min.value">
+                      {{min.value}}
+                    </option>
+                  </select>
+                
+            </div>
+            <div class="w3-col m3 divpadding">
+              
+                <label>PRICE MAXIMUM</label><br>
+                <select id="selectwidth" [(ngModel)]="selectedEntry_maxprice" (ngModelChange)='onSelectionChange_pricemax($event)'>
+                  <option *ngFor="let max of price_max" [value]="max.value">
+                    {{max.value}}
+                  </option>
+                </select>
+            </div><br>
+            <div class="w3-col m3 divpadding">
+              <label>BATH</label><br>
+              <select id="selectwidth" [(ngModel)]="selectedEntry_bath" (ngModelChange)='onSelectionChange_bath($event)'>
+                  <option *ngFor="let bath of bathlist" [value]="bath.value">
+                    {{bath.value}}
+                  </option>
+                </select>
+            </div>
+            <!--<div class="w3-col m3 divpadding place">
+              <label> SQT FEET</label><br>
+             <input class="inputtext" type="text" placeholder="Min" (focusout)="onKey_sqfeetmin($event)">&nbsp;&nbsp;<input class="inputtext" type="text" placeholder="Max" (focusout)="onKey_sqfeetmax($event)">
+            </div>-->
+            <div class="w3-col m3 divpadding place">
+                <label> LOCATION</label><br>
+                <input class="inputtext1" type="text" placeholder="enter address/zip" id="location" [(ngModel)] = "location_value" (focusout)="onKey($event)">
+              </div>
+            <div class="w3-col m2 divpadding">
+              <br>
+              <button class="w3-button w3-block w3-black" (click)="filterProperties()">Search</button>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+    
+          <div class="w3-content" style="max-width:1532px;">
+             <div class="w3-row-padding w3-padding-16"  *ngIf="filteredApartments">
+                <div class="searchMenu"> {{location_value}} Real Estate {{filteredApartments.length}} Homes found
+                  <select id="sort" [(ngModel)]="selected_sort" (ngModelChange)='onSelectionChange_sort($event)'>
+                     <option *ngFor="let sort of sortlist" [value]="sort.value">
+                         {{sort.value}}
+                       </option>
+                  </select>
+                  <button name="sort" (click)="onSort()">sort</button>
+                </div>
+              
+                 <div  class="w3-third w3-margin-bottom" *ngFor="let ap of filteredApartments"  (click)="goToDetailPage(ap._id)"> 
+                     <img src="{{ap.imgsrc1}}" alt="Norway" style="width:100%">
+                     <div class="w3-container w3-white">
+                       <h3>{{ap.email}}</h3>
+                       <h4>Price: {{ ap.price}}</h4>
+                       <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+                     <button  class="w3-button w3-block w3-black w3-margin-bottom" type="button" (click)="goToDetailPage(ap._id)">View Details</button>  
+                   </div>
+                    </div>
+               </div>
+ 
+                </div>
+              
+             
+              
+ 
+ 
+ 

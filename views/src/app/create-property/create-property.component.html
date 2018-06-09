@@ -1,0 +1,130 @@
+<div id="allcontent">
+  <!-- <h2>Add new property...</h2> -->
+  <p id="title">Add new property....</p>
+
+<div id="address">
+  <h3>PLEASE PROVIDE THE ADDRESS BELOW</h3>
+    <div class="form-group">
+        <input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl">
+      <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom">
+          <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+        </agm-map>
+      </div><!--  
+   --><div id="address-fields">
+      <p id="error">Address field blank</p>
+      <label for="apt_num"> APARTMENT NUMBER : <br/>
+        <input class="slimField" id="apt_num" name="apartmentNumber"></label><br>
+      <label for="street_number"> STREET NUMBER :<br>
+      <input class="slimField" id="street_number" name="street"></label>  
+      <!-- <label for="route">Route : -->
+      <input class="widefield" id="route" name="locality">   <!--</label>--> <br>
+      <label for="locality"><br> CITY :
+     <br><input class="field" id="locality" name="city"></label><br>
+      <label for="administrative_area_level_1"><br>STATE : 
+       <br><input class="field" id="administrative_area_level_1" name="state">
+      </label><br/>
+      <label for="postal_code">ZIP CODE: <br/><input class="slimField" id="postal_code" name="zipcode"></label>
+      <br/><label for="country">COUNTRY : <br><input class="field" id="country" name="country"></label>
+    </div>
+</div>
+<br>
+<div id="propinfo">
+  <div id="hometype" >
+    <h3>HOME TYPE</h3>
+      <label for="houses">
+          <input type="radio" id="houses" name="type" checked="checked" value="HOUSES"> HOUSE
+        </label>
+        <label for="apartments">
+            <input type="radio" id="apartments" name="type" value="APARTMENTS"> APARTMENT
+          </label>
+          <label for="townhome">
+              <input type="radio" id="townhomes" name="type" value="TOWNHOMES"> TOWN HOME
+            </label>
+            <label for="condos">
+                <input type="radio" id="condos" name="type" value="CONDOS"> CONDOS
+              </label>
+  </div>
+  </div>
+  <div id="bedroom" >
+      <h3>BEDROOM</h3>
+      <label for="1 bhk">
+          <input type="radio" id="1 bhk" name="bed" checked="checked" value="1 BHK"> 1BHK
+        </label> &nbsp;
+        <label for="2 bhk">
+          <input type="radio" id="2 BHK" name="bed" value="2 BHK"> 2BHK
+        </label> &nbsp;
+        <label for="3bhk">
+            <input type="radio" id="3BHK" name="bed" value="3 BHK"> 3BHK
+          </label> &nbsp;
+        <label for="4bhk">
+          <input type="radio" id="4 bhk" name="bed" value="4 BHK"> 4BHK
+        </label> &nbsp;
+        <label for="5bhk">
+            <input type="radio" id="5 bhk" name="bedroom" value="5 BHK & ABOVE"> 5BHK &amp; ABOVE
+          </label> &nbsp;
+             
+             
+  </div>
+
+  <br>
+  <br>
+
+  <div id="bath" >
+    <h3>BATH</h3>
+    <label for="0bath">
+        <input type="radio" id="0bath" name="bath" checked="checked" value="0"> 0 
+      </label> &nbsp;
+      <label for="1bath">
+        <input type="radio" id="1bath" name="bath" value="1"> 1 
+      </label> &nbsp;
+      <label for="2bath">
+          <input type="radio" id="2bath" name="bath" value="2"> 2 
+        </label> &nbsp;
+      <label for="3bath">
+        <input type="radio" id="3bath" name="bath" value="3"> 3 
+      </label> &nbsp;
+      <label for="4bath">
+          <input type="radio" id="4bath" name="bath" value="4"> 4 
+        </label> &nbsp; 
+        <label for="5bath">
+          <input type="radio" id="5bath" name="bath" value="5"> 5
+        </label> &nbsp; 
+        <label for="6bath">
+          <input type="radio" id="6bath" name="bath" value="5+"> 5+
+        </label> &nbsp;              
+         
+</div>
+<br><br>
+<label for="sqfeet" class="price">
+  <h4>SQUARE FEET: </h4><input type="number" id="sqfeet" name="sqfeet"  min="1">
+  </label>
+  <br>
+  <br>
+  <br><br>
+  <div >
+    <h3>PUT THE PROPERTY UP FOR: </h3>
+    <label for="buy">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="radio" id="buy" name="category" checked="checked" value="sell"> BUYING
+      </label> &nbsp;
+      <label for="rent">
+          <input type="radio" id="rent" name="category" value="rent"> RENT
+        </label> &nbsp;
+  </div><br>
+<div >
+  <label for="price" class="price">
+  <h4>PRICE: $</h4><input type="number" id="price" name="price"  min="1">
+  </label>
+  </div>
+
+<label for="img_ip" >Add Images : 
+  <img src="../../assets/icons8-plus-96.png" alt="Add_img" id="plus_img" style="width:64px; height:64px;" (click)="addImage($event)">
+  <input type="file" name="img_ip" id="multi_img_ip" accept=".jpg, .jpeg, .png" multiple></label>
+  <br>
+  <div id="image_inputs">
+    <!-- <div id="image_preview">
+    </diV> -->
+    <p class="preview"></p>
+  </div>
+<button (click)="uploadData($event)">SAVE DATA</button>
+
+</div>

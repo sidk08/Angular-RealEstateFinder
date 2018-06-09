@@ -1,0 +1,38 @@
+.navbar-header-icon{
+  float: left;
+  color:whitesmoke;
+  font-size: 25px;
+  padding-top: 5px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.user-navbar{
+
+  max-width: 280px;
+  border-bottom: none;
+  display: inline-block;
+}
+.container-fluid a{
+color:white;
+
+}
+nav.navbar.navbar-inverse{
+margin-bottom: 0px;
+
+    color:whitesmoke;
+    font-size: 20px;
+    padding-top: 5px;
+  }
+  .user-navbar{
+  
+    max-width: 280px;
+    border-bottom: none;
+    display: inline-block;
+}
+
+nav.navbar.navbar-inverse{
+  margin-bottom: 0px;
+}
+.main-navbar{
+  display: inline-block;
+    display: inline-block;
+}

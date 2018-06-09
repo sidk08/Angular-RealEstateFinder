@@ -1,0 +1,62 @@
+<!-- <div class="col-md-8 col-md-offset-2">
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="email">Mail</label>
+            <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    formControlName="email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input
+                    type="password"
+                    id="password"
+                    class="form-control"
+                    formControlName="password">
+        </div>
+        <button
+                class="btn btn-primary"
+                type="submit"
+                [disabled]="!myForm.valid">Submit</button>
+    </form>
+</div> -->
+<body>
+        <div class="container">
+                <div class="row main">
+                    <div class="main-login main-center">
+                            <h2>Enter the details below :</h2>
+                    
+                            <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+                            <div class="form-group">
+                                <label for="email" class="cols-sm-2 control-label">Email Address</label>
+                                <div class="cols-sm-10">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                        <input type="text" class="form-control" formControlName="email" name="email" id="email"  placeholder="Enter your Email"/>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="password" class="cols-sm-2 control-label">Password</label>
+                                <div class="cols-sm-10">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                        <input type="password" class="form-control" name="password" id="password" formControlName="password" placeholder="Enter your Password"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="form-group ">
+                                <a target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Login</a>
+                            </div> -->
+                            <button
+                                class="btn btn-primary"
+                                type="submit"
+                                [disabled]="!myForm.valid">LogIn</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </body>

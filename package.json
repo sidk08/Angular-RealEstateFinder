@@ -1,0 +1,38 @@
+{
+  "name": "final-project-designer-ninjas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "ng build && node index.js"
+  },
+  "author": "ramyasri nimmagadda",
+  "license": "ISC",
+  "dependencies": {
+    "@agm/core": "^1.0.0-beta.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.1.0",
+    "cors": "^2.8.4",
+    "d3": "^5.1.0",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "formidable": "^1.2.1",
+    "jsonwebtoken": "^8.2.1",
+    "koa-body": "^2.5.0",
+    "mkdirp": "^0.5.1",
+    "mongoose": "^5.0.13",
+    "multer": "^1.3.0",
+    "nodemailer": "^4.6.4",
+    "nodemon": "^1.17.3",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1",
+    "passport-local": "^1.0.0",
+    "read-chunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.7.4",
+    "@types/googlemaps": "^3.30.8"
+  }
+}

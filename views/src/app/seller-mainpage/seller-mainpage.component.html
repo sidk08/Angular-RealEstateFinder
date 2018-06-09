@@ -1,0 +1,82 @@
+<!--<script src="http://d3js.org/d3.v2.min.js"></script>
+
+
+<h5>
+  The list of your items:
+</h5>
+<br>
+<div *ngFor="let ap of apartments">
+
+      {{ap._id}}
+
+</div>-->
+
+<!--<table>
+    <tr>
+      <th>ADDRESS</th>
+      <th>TYPE</th>
+      <th>CATEGORY</th>
+    </tr>
+<div *ngFor="let ap of apartments">
+    <tr>
+    <td{{ap.address}}></td>
+    <td>{{ap.type}}</td>
+    <td>{{ap.category}}</td>
+    </tr>
+
+</div>-->
+
+<!--table>
+       
+        <tr *ngFor="let ap of apartments">
+          <td >
+            {{ap._id}}
+          </td>
+          <td>
+              {{ap.address}}
+          </td>
+          <td>
+                {{ap.category}}
+            </td>
+            <td>
+            <button class="btn btn-danger" type="button" (click)="deleteApartment(ap._id)">DELETE</button>
+            </td>
+        </tr>
+       
+      
+      </table>
+
+    
+      <button (click)="toCreateProperty()">CREATE PROPERTY</button>-->
+      <div class="propertyList">
+        <div class="content" *ngFor="let ap of apartments">
+            <!-- <img src="../../assets/placeimg_800_600_tech (1).jpg" alt="Mountains"> -->
+            <input type="hidden" value="${{ap._id}}">
+            <img src="{{basefolder}}+{{ap._id}}+/{{ap.imgsrc2}}" alt="{{ap.imgsrc1}}">
+            <h4>{{ap.address}}</h4>
+            <p>Quoted Price : {{ap.price}}</p>
+            <button class="btn btn-danger" type="button" (click)="deleteApartment(ap._id)">DELETE</button>
+          <!-- <img src="../assets/icons8-pencil-drawing-96.png" id="edit" (click)=showDetails($event)>-->
+          </div>
+       
+          <!-- <div class="content">
+              <img src="../../assets/placeimg_800_600_tech (2).jpg" alt="Mountains">
+              <h4>Property 2</h4>
+              <p>Quoted Price : $500/month</p>
+              <img src="../../assets/icons8-pencil-drawing-96.png" id="edit" (click)=showDetails($event)>
+            </div> -->
+       
+          <div class="content new_prop">
+            <div id="imgcontainer">
+              <img src="../assets/icons8-plus-96.png" alt="List new property" (click)="toCreateProperty()">
+            </div>
+              <!-- <h4>Property 2</h4> -->
+              <p>List new property..</p>
+          </div>
+       </div>
+       
+       <!-- <div class="propDetail"> -->
+      `<!--  <app-edit-property [selecId]="propId"></app-edit-property>
+       </div> -->
+    
+   <!-- <button (click)="toCreateProperty()">Create Property</button>-->

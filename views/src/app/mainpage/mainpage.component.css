@@ -1,0 +1,183 @@
+user-navbar{
+  
+  max-width: 280px;
+  border-bottom: none;
+  display: inline-block;
+}
+.hero-text h2{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+  color:white;
+  font-size: 25px;
+}
+nav.navbar.navbar-inverse{
+margin-bottom: 0px;
+}
+
+.main-navbar{
+
+  display: inline-block;
+ 
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.hero-image {
+background-image:url("images/fullimage1.jpg");
+height: 60%;
+/* width: 100%; */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+top:0px;
+}
+.navbar-header{
+color:whitesmoke;
+font-size: 25px;
+padding-top: 5px;
+font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.review{
+  margin:20px;
+	text-align:center;
+  Font-size:40px;
+  font-family:"Comic Sans MS", cursive, sans-serif;  
+}
+.hero-text {
+text-align: center;
+position: absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%, -50%);
+color:black;
+}
+.hero-text h1{
+color:black;
+}
+.hero-text button {
+border: none;
+outline: 0;
+display: inline-block;
+padding: 10px 25px;
+color: black;
+background-color: #ddd;
+text-align: center;
+cursor: pointer;
+}
+
+.hero-text button:hover {
+background-color: #555;
+color: white;
+}
+input[type=text] {
+  background-color: white;
+  background-image: url('images/icons8-search-26.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  width:500px;
+  height:40px;
+  font-size: 20px;
+}
+
+.footer-bottom {
+
+  background-color: black;
+  min-height: 30px;
+  width: 100%;
+bottom: 0;
+}
+.copyright {
+  color: #fff;
+  line-height: 30px;
+  min-height: 30px;
+  padding: 7px 0;
+}
+.design {
+  color: #fff;
+  line-height: 30px;
+  min-height: 30px;
+  padding: 7px 0;
+  text-align: right;
+}
+.design a {
+  color: #fff;
+}
+.hero-text h3{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color:white;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+  }
+  .hero-text h1{
+    color:white;
+    font-size: 35px;
+  }
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  .hero-image {
+    background-image:url("images/fullimage1.jpg");
+    height: 60%;
+    /* width: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top:0px;
+  }
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+  input[type=text] {
+      background-color: white;
+      background-image: url('images/icons8-search-26.png');
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding-left: 40px;
+      width:500px;
+      height:40px;
+      font-size: 20px;
+  }
+  .carousel-inner {
+    background-color: #C1E0FF;
+  height:500px;
+}
+.carousel-inner p {
+  color: rgb(84, 15, 141);
+}
+.carousel-inner h1 {
+  color:#8D13CD;
+}
+.carousel-caption {
+    font-size: 2em;
+    right: 10%;
+    left: 60%;
+    top: 30%;
+    bottom: 30%;
+    text-align: left;
+    text-shadow: none;
+   }
+.carousel-indicators{
+    font-size: 2em;
+    bottom: -1%;
+    text-align: left;
+    text-shadow: none;
+      }

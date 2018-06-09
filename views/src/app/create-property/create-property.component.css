@@ -1,0 +1,217 @@
+*, ::after, ::before {
+  box-sizing: unset;
+  /* overflow: scroll; */
+ }
+ 
+ #allcontent{
+  margin: 0 auto;
+  width: 90%;
+ background-color:  rgba(220, 220, 220, 0.3);
+  border: 1px solid rosybrown;
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 20px;
+ /* background-image: url("images/property.jpg");
+  opacity: 0.9;*/
+  
+  
+ }
+ 
+ #address-fields{
+   position: absolute;
+    display: inline-block;
+    width: 50%;
+    margin-top: 4%;
+  }
+  
+  .form-group{
+    display: inline-block;
+    width: 50%;
+  }
+  
+  agm-map {
+    display: inline-block;
+    height: 400px;
+    width: 95%;
+    padding: 30px;
+    /* margin: auto; */
+  }
+  .form-group > input{
+    width: 80%;
+    margin: 0 auto;
+    margin-left:40px;
+  }
+  
+  #image_inputs input{
+    opacity: 0;
+  }
+  
+  #image_inputs img{
+    cursor: pointer;
+  }
+  
+  #addedImages{
+    border: 1px solid sienna;
+    width: 80%;
+    height: 30px;
+  }
+  
+  li>img{
+    height: 64px;
+  }
+    #locationField, #controls {
+      position: relative;
+      width: 480px;
+    }
+    #autocomplete {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 99%;
+    }
+    .label {
+      text-align: right;
+      font-weight: bold;
+      width: 100px;
+      color: #303030;
+    }
+    #address td {
+      font-size: 10pt;
+    }
+    .field {
+      width: 99%;
+    }
+    .slimField {
+      width: 80px;
+    }
+    .wideField {
+      width: 200px;
+    }
+    #locationField {
+      height: 20px;
+      margin-bottom: 2px;
+    }
+ 
+    .sbs{
+      display: inline-block;
+      width: 50%;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+ 
+    label{
+      margin: 5px;
+    }
+    label>h4{
+      display: inline;
+    }
+ 
+    label[for="price"]{
+      /* width: %; */
+      /* align-content: center; */
+      margin: auto;
+     padding-left: 40px;
+    }
+    label[for="buy"]{
+      /* width: %; */
+      /* align-content: center; */
+      margin: auto;
+     padding-left: 40px;
+    }
+
+    button{
+      position:relative;
+      left: 42%;
+      margin: 30px;
+      border: none;
+      height: 60px;
+      width: 150px;
+      border-radius: 40px;
+      background-color: rgb(88, 60, 241);
+      cursor: pointer;
+      text-decoration-color: aliceblue
+    }
+ 
+   /* button:hover{
+      background-color: rgba(255, 218, 185, 0.7);
+    }*/
+    #title{
+      font-size: xx-large;
+      text-align: center;
+      position: relative;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+ 
+    #error{
+      color: tomato;
+      display: none;
+      font-weight: bold;
+    }
+ h3{
+  margin-left:40px;
+ }
+ .slimField{
+    border: .5px solid rgb(184, 176, 176);
+    border-radius: 4px;
+    height: 30px;
+    width: 200px;
+    
+ }
+ .field{
+ 
+  border: .5px solid rgb(184, 176, 176);
+    border-radius: 4px;
+    height: 30px;
+    width: 200px;
+ 
+ }
+ .widefield{
+ 
+  border: .5px solid rgb(184, 176, 176);
+    border-radius: 4px;
+    height: 30px;
+    width: 200px;
+ 
+ }
+ 
+ #bedroom{
+ 
+    position: absolute;
+    top:80%;
+    left: 50%;
+
+ 
+ }
+ #hometype{
+ 
+  position: absolute;
+  top:90%;
+  left:50%;
+ 
+ }
+ #hometype h3{
+  left:5%;
+ }
+ 
+ sbs{
+ 
+  position: absolute;
+  top:95%;
+  left:10%;
+ 
+ }
+ .sbs1{
+ 
+  position: absolute;
+    top:105%;
+    left: 50%;
+ }
+ .addimage{
+  position: absolute;
+  left:7%;
+  top: 110%;
+ }
+ #multi_img_ip{
+   display:none;
+ }

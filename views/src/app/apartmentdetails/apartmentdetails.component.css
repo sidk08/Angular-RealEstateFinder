@@ -1,0 +1,92 @@
+@import url(https://www.w3schools.com/w3css/4/w3.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css);
+
+.label-input100 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 62px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  font-size: 18px;
+  color: #999999;
+}
+
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.contact{
+  padding:8px;display:block;border:none;border-bottom:1px solid #ccc;
+  width:40%;
+}
+.center{
+  /*height: 100px;
+  width: 100px;
+  background: #222;
+  position: absolute;*/
+  
+  /*Centering Method 2*/  
+  margin:20px 10% 20px 10%;
+  margin-left:40%
+}
+div{
+  background-color:#999999;
+
+
+}
+.headertitle{
+
+  color: black;
+  text-align: center;
+  text-decoration-style: wavy;
+}
+
+.carousel-inner {
+  background-color: #C1E0FF;
+height:500px;
+}
+.carousel-inner p {
+color: rgb(84, 15, 141);
+}
+.carousel-inner h1 {
+color:#8D13CD;
+}
+.carousel-caption {
+  font-size: 2em;
+  right: 10%;
+  left: 60%;
+  top: 30%;
+  bottom: 30%;
+  text-align: left;
+  text-shadow: none;
+ }
+.carousel-indicators{
+  font-size: 2em;
+  bottom: -1%;
+  text-align: left;
+  text-shadow: none;
+    }
