@@ -17,6 +17,17 @@ Node
 Express
 Angular
 
+### Screenshots:
+
+##### Homepage :
+[screenshot-hm](https://github.com/sidk08/Angular-RealEstateFinder/blob/master/homepage.JPG "Homepage")
+
+##### Search Page :
+[screenshot-srch](https://github.com/sidk08/Angular-RealEstateFinder/blob/master/search.JPG "Search")
+
+##### Add properties page :
+[screenshot-add](https://github.com/sidk08/Angular-RealEstateFinder/blob/master/add.JPG "Add")
+
 
 Installation process:
 install angular
@@ -29,7 +40,8 @@ install bcrypt
 For running the website:
 start mongodb and connect to the database using node.js
 
-For the server 
+For starting the server :
+run - > node index.js
 
 Authors:
 Siddhesh Kuvalekar
